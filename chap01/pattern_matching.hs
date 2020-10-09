@@ -1,8 +1,11 @@
-lucky :: Int -> String
-lucky 7 = "lucky number seven!"
-lucky x = "out of lucky"
+omikuji :: Int -> String
+omikuji 7 = "hit"
+omikuji _ = "lose"
 
 sayAmount n = case n of
     1 -> "one"
     2 -> "two"
     n -> "a bunch"
+
+myHead (x:xs) = x
+myHead [] = error "No head for empty list"

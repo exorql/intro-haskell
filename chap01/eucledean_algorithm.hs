@@ -1,4 +1,4 @@
-myGCD a b = if remainder == 0
+myGCD a b = if result == 0
     then b
-    else myGCD b remainder
-    where remainder = a `mod` b
+    else myGCD b result
+    where result = a `mod` b
